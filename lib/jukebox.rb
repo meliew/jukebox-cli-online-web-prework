@@ -45,13 +45,13 @@ def run
   help
   puts "Please enter a command:"
   user_answer = gets.chomp
-when user_answer == "play"
+if user_answer == "play"
   play(songs)
-when user_answer == "help"
+elsif user_answer == "help"
   help
-when user_answer == "list"
+elsif user_answer == "list"
   list(songs)
-when user_answer == "exit"
+elsif user_answer == "exit"
   exit_jukebox
   break
   end
