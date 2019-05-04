@@ -19,11 +19,12 @@ def help
 end
 
 def play(songs)
-  songs.each_with_index do |title, index|
     puts "Please enter a song name or number:"
   answer = gets.chomp
-    if answer == title || index+1
+  songs.each_with_index do |title, index|
+    if answer == title || answer.to_i == (index + 1)
       puts "Playing #{title}"
+      return
     else
       puts
       "Invalid input, please try again"
