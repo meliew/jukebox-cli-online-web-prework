@@ -24,9 +24,9 @@ def play(songs)
   songs.each_with_index do |title, index|
     if answer == title || answer.to_i == (index + 1)
       puts "Playing #{title}"
-      return
     else
-    return  "Invalid input, please try again"
+    puts "Invalid input, please try again"
+    return
     end
   end
 end
