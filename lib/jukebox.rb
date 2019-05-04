@@ -54,4 +54,5 @@ when user_answer == "list"
 when user_answer == "exit"
   exit_jukebox
   break
+  end
 end
