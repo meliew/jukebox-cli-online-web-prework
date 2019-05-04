@@ -46,7 +46,7 @@ def run
   puts "Please enter a command:"
   user_answer = gets.chomp
 when user_answer == "play"
-  play
+  play(songs)
 when user_answer == "help"
   help
 when user_answer == "list"
