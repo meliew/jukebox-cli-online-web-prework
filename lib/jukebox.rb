@@ -12,21 +12,21 @@ songs = [
 
 def help
   puts  "I accept the following commands:
-      - help : displays this help message
- - list : displays a list of songs you can play
-   - play : lets you choose a song to play
-    - exit : exits this program"
+  - help : displays this help message
+  - list : displays a list of songs you can play
+  - play : lets you choose a song to play
+  - exit : exits this program"
 end
 
 def play(songs)
-    puts "Please enter a song name or number:"
+  puts "Please enter a song name or number:"
   answer = gets.chomp
   songs.each_with_index do |title, index|
     if answer == title || answer.to_i == (index + 1)
       puts "Playing #{title}"
     else
-    puts "Invalid input, please try again"
-    return
+      puts "Invalid input, please try again"
+      return
     end
   end
 end
