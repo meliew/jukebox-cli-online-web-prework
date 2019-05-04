@@ -53,6 +53,5 @@ elsif user_answer == "list"
   list(songs)
 else user_answer == "exit"
   exit_jukebox
-  break
   end
 end
