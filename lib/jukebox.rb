@@ -51,7 +51,7 @@ elsif user_answer == "help"
   help
 elsif user_answer == "list"
   list(songs)
-elsif user_answer == "exit"
+else user_answer == "exit"
   exit_jukebox
   break
   end
