@@ -43,15 +43,17 @@ end
 
 def run
   help
-  puts "Please enter a command:"
-  user_answer = gets.chomp
-if user_answer == "play"
-  play(songs)
-elsif user_answer == "help"
-  help
-elsif user_answer == "list"
-  list(songs)
-else user_answer == "exit"
-  exit_jukebox
+  loop do puts "Please enter a command:"
+    user_answer = gets.chomp
+    if user_answer == "play"
+      play(songs)
+    elsif user_answer == "help"
+      help
+    elsif user_answer == "list"
+      list(songs)
+    else user_answer == "exit"
+      exit_jukebox
+    end
+    break
   end
 end
